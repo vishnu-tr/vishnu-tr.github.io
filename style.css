@@ -1,0 +1,219 @@
+/* body */
+body 
+{
+    background-color:ivory; font-size: 2.5vw; font-family: 'Special Elite','Times New Roman';
+}
+
+/* hyperlinks */
+a
+{
+    color: maroon; text-decoration: none; 
+}
+
+a:hover
+{
+    color:crimson; 
+}
+
+a:active
+{ 
+    color: black;
+}
+
+/* Heading */
+.heading-container
+{
+    display: flex; justify-content: space-evenly; flex-direction: column; margin-top: 2vw; margin-bottom: 1vw;
+}
+
+.heading-container h1
+{
+    flex: 1; margin: 0em; padding-bottom: 0.25vw; padding-left: 1vw; border-bottom: 0.15vw solid black;
+}
+
+.heading-items
+{
+    display: flex; flex-direction: row; justify-content: space-evenly; flex: 1; padding-top: 1em; margin-right: 2vw; margin-left: 2vw;
+}
+
+.heading-items a
+{
+    flex: 1; display: inline; margin: auto; text-align: center;
+}
+
+/* About-me */
+.about-container
+{
+    display: flex; flex-direction: row; margin-top: 2vw; margin-bottom: 2vw;
+}
+
+.photo
+{
+    flex: 1; margin-left: 2vw;
+}
+
+.photo img
+{
+    border-radius: 50%; height: 25vw; 
+}
+
+.About-me
+{
+    flex: 1; flex-grow: 2; margin-right: 3vw;
+}
+
+/* Publications */
+.scholar-container
+{
+    display: flex; flex-direction: column; margin: auto;
+}
+
+.scholar 
+{
+    flex: 1; margin-left: 2vw;
+}
+
+.Publications
+{
+    margin-left: 2vw; margin-top: 2vw; margin-bottom: 2vw;
+}
+
+/* Education */
+.Education
+{
+    margin-left: 2vw; margin-top: 2vw; margin-bottom: 2vw;
+}
+
+/* Contact */
+.contact
+{
+    margin-left: 2vw; margin-top: 2vw; margin-bottom: 2vw;
+}
+
+/* Captions */
+.caption
+{
+    text-align: center; margin-top: 2vw; margin-bottom: 2vw;
+}
+
+/* Width adjustments for different devices */
+/* mobile-Small */
+@media (max-width: 320px) 
+{
+    body
+    {
+        font-size: 3vw;
+    }
+
+    .photo img 
+    {
+        height: 25vw;
+    }
+
+    .heading-container 
+    {
+        display: flex; flex-direction: column;
+    }
+
+    .scholar-container 
+    {
+        flex-direction: column;
+    }
+}
+
+/* Mobile-large */
+@media (max-width:625px) and (min-width: 321px) 
+{
+    body
+    {
+        font-size: 3vw;
+    }
+
+    .photo img 
+    {
+        height: 25vw;
+    }
+
+    .heading-container 
+    {
+        display: flex; flex-direction: column;
+    }
+
+    .scholar-container 
+    {
+        flex-direction: column;
+    }
+}
+
+/* Intermediate size */
+@media (max-width: 767px) and (min-width: 626px)
+{
+    body 
+    {
+        font-size: 3vw;
+    }
+
+    .photo img 
+    {
+        height: 25vw;
+    }
+
+    .heading-container 
+    {
+        display: flex; flex-direction: column;
+    }
+
+    .scholar-container 
+    {
+        flex-direction: column;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width: 768px)
+{
+    body 
+    {
+        font-size: 2vw;
+    }
+
+    .photo img 
+    {
+        height: 20vw;
+    }
+
+    .heading-container 
+    {
+        display: flex; flex-direction:column;
+    }
+
+    .scholar-container 
+    {
+        flex-direction: column;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px)
+{
+    body 
+    {
+        font-size: 1.5vw;
+    }
+
+    .photo img 
+    {
+        height: 20vw
+    }
+
+    .heading-container 
+    {
+        display: flex; flex-direction: column;
+    }
+
+    .scholar-container 
+    {
+        flex-direction: column;
+    }
+}
